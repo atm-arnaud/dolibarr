@@ -301,7 +301,6 @@ class Comment extends CommonObject
 			$sql.= " AND c.element_type = '".$db->escape($element_type)."'";
 			$sql.= " AND c.entity = ".$conf->entity;
 			$sql.= " ORDER BY c.tms DESC";
-
 			dol_syslog("Comment::fetchAllFor", LOG_DEBUG);
 			$resql=$db->query($sql);
 			if ($resql)

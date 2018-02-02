@@ -450,8 +450,6 @@ class Project extends CommonObject
                 {
                 	$this->fetchComments();
                 }
-
-                return 1;
             }
 
             $this->db->free($resql);
